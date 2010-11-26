@@ -1,5 +1,15 @@
 Base::Application.routes.draw do
   
+  resources :tasks
+
+  resources :tags
+
+  resources :categories
+
+  resources :groups
+
+  resources :lists
+
   match "/getting_started" => "pages#show", :id => 1, :as => :getting_started
 
   root :to => "pages#show", :id => 1

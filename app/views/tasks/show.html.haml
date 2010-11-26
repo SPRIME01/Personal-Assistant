@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @task.name
+%p
+  %b Description:
+  = @task.description
+%p
+  %b Due by:
+  = @task.due_by
+%p
+  %b List:
+  = @task.list_id
+%p
+  %b Group:
+  = @task.group_id
+%p
+  %b User:
+  = @task.user_id
+%p
+  %b Category:
+  = @task.category_id
+%p
+  %b Repeatable:
+  = @task.repeatable
+
+= link_to 'Edit', edit_task_path(@task)
+\|
+= link_to 'Back', tasks_path
