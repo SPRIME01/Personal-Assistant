@@ -5,13 +5,7 @@ gem 'rails', '3.0.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
-
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
+gem 'mysql2'
 
 # To use debugger
 # gem 'ruby-debug'
@@ -28,3 +22,34 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+gem 'mime-types'
+gem 'compass', '0.10.6'
+gem 'aws-s3', :require => 'aws/s3'
+gem 'devise'
+gem 'hpricot'
+gem 'ruby_parser'
+
+gem 'rails3-generators'
+gem 'haml-rails'
+gem 'jquery-rails'
+
+gem 'formtastic', '~> 1.1.0'
+
+gem 'paperclip'
+
+
+group :test, :development do
+  gem "rspec"
+  gem "rspec-rails"
+  gem "factory_girl"
+end
+
+group :cucumber do
+    gem 'capybara'
+    gem 'database_cleaner'
+    gem 'cucumber-rails'
+    gem 'cucumber'
+    gem 'spork'
+    gem 'launchy'
+end
