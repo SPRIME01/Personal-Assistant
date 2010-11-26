@@ -1,4 +1,10 @@
 Base::Application.routes.draw do
+  
+  match "/getting_started" => "pages#show", :id => 1, :as => :getting_started
+
+  root :to => "pages#show", :id => 1
+  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
