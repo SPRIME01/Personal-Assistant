@@ -1,0 +1,32 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title= page_title
+    = stylesheet_link_tag :all
+    = formtastic_stylesheet_link_tag
+    = csrf_meta_tag
+    = javascript_include_tag "jquery", "swfobject", "uploadify", "application.js"
+
+  %body
+    #container
+      #header
+        #user_nav
+          = user_nav
+        #main_menu
+          = main_nav
+          %p.clear
+      
+      %p.notice= notice
+      %p.alert= alert
+      
+      #sidebar
+        - if @content_for_sidebar
+          = content_for :sidebar
+        - elsif @current_user
+          = render 'shared/sidebar'
+        - else
+          %p Sidebar
+      #content
+        = yield
+        
+      %p.clear

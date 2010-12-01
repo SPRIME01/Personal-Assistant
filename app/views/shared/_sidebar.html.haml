@@ -1,0 +1,39 @@
+%h3= link_to "My Lists", lists_path
+%ul
+  - current_user.lists.each do |list|
+    %li= list.name
+%ul.options
+  %li= link_to "New List", new_list_path
+  %li= link_to "Manage Lists", lists_path
+ 
+%h3= link_to "My Tasks", tasks_path
+%ul
+  - current_user.tasks.each do |task|
+    %li= task.name
+%ul.options
+  %li= link_to "New List", new_task_path
+  %li= link_to "Manage Lists", tasks_path
+ 
+%h3= link_to "My Groups", groups_path
+%ul
+  - current_user.groups.each do |groups|
+    %li= groups.name
+%ul.options
+  %li= link_to "New List", new_group_path
+  %li= link_to "Manage Lists", groups_path
+
+%h3= link_to "My Categories", categories_path
+%ul
+  - current_user.categories.each do |category|
+    %li= category.name
+%ul.options
+  %li= link_to "New List", new_category_path
+  %li= link_to "Manage Lists", categories_path
+  
+%h3= link_to "My Tags", tags_path
+%ul
+  - current_user.tags.each do |tag|
+    %li= tag.name
+%ul.options
+  %li= link_to "New List", new_tag_path
+  %li= link_to "Manage Lists", tags_path
