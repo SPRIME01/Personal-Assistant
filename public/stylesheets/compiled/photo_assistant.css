@@ -1,0 +1,122 @@
+/* line 1, ../sass/_main.sass */
+html, body {
+  background-color: #c9e082;
+  font-family: garamond, georgia, helvetica, clean, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 10, ../sass/_main.sass */
+ul {
+  list-style-type: none;
+}
+/* line 14, ../sass/_main.sass */
+ul li a img {
+  vertical-align: middle;
+}
+
+/* line 17, ../sass/_main.sass */
+a {
+  color: #ff9100;
+  text-decoration: none;
+}
+/* line 20, ../sass/_main.sass */
+a:hover {
+  color: #ec701e;
+}
+
+/* line 23, ../sass/_main.sass */
+.clear {
+  clear: both;
+}
+
+/* line 26, ../sass/_main.sass */
+#container {
+  width: 950px;
+  margin: 10px auto 10px auto;
+  background-color: #f8ffe0;
+  padding: 14px 0;
+  border: 6px solid #abc163;
+}
+
+/* line 33, ../sass/_main.sass */
+#header {
+  height: 100px;
+}
+/* line 35, ../sass/_main.sass */
+#header ul {
+  margin-bottom: 14px;
+}
+/* line 37, ../sass/_main.sass */
+#header ul li {
+  margin-right: 6px;
+}
+/* line 39, ../sass/_main.sass */
+#header #user_nav {
+  text-align: right;
+}
+/* line 42, ../sass/_main.sass */
+#header #main_menu ul {
+  padding: 2px 14px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+/* line 46, ../sass/_main.sass */
+#header #main_menu ul li {
+  background-color: #434343;
+  float: left;
+}
+/* line 49, ../sass/_main.sass */
+#header #main_menu ul li a {
+  font-family: Arial, sans-serif;
+  color: #f8ffe0;
+  padding: 6px 12px;
+  display: block;
+  font-weight: bold;
+}
+
+/* line 57, ../sass/_main.sass */
+#content {
+  margin: 0 0 0 17px;
+  float: left;
+  width: 695px;
+}
+/* line 61, ../sass/_main.sass */
+#content h1 {
+  color: #2e2e2e;
+  font-family: "Trebuchet MS";
+  font-size: 170%;
+  margin-bottom: 8px;
+}
+
+/* line 67, ../sass/_main.sass */
+#sidebar {
+  margin: 0 0 0 17px;
+  width: 200px;
+  float: left;
+}
+/* line 71, ../sass/_main.sass */
+#sidebar h3 {
+  background-color: #e5f4ad;
+  border: 1px solid #abc163;
+  margin-bottom: 14px;
+  font-size: 130%;
+  color: #444444;
+}
+/* line 77, ../sass/_main.sass */
+#sidebar h3 a {
+  color: #444444;
+  display: block;
+  padding: 6px;
+}
+/* line 81, ../sass/_main.sass */
+#sidebar ul {
+  margin-bottom: 14px;
+}
+/* line 84, ../sass/_main.sass */
+#sidebar ul.options li {
+  display: inline;
+}
