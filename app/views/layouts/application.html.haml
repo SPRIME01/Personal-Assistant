@@ -22,7 +22,7 @@
       #sidebar
         - if @content_for_sidebar
           = content_for :sidebar
-        - elsif @current_user
+        - elsif current_user
           = render 'shared/sidebar'
         - else
           %p Sidebar
