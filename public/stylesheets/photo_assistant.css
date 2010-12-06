@@ -116,7 +116,7 @@ a:hover {
 #sidebar ul {
   margin-bottom: 14px;
 }
-/* line 84, sass/_main.sass */
-#sidebar ul.options li {
-  display: inline;
+/* line 83, sass/_main.sass */
+#sidebar ul.options {
+  text-align: right;
 }
