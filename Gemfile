@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.1'
+gem 'rails', '3.0.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -35,6 +35,8 @@ gem 'haml-rails'
 gem 'jquery-rails'
 
 gem 'formtastic', '~> 1.1.0'
+
+gem 'event-calendar', :require => 'event_calendar'
 
 gem 'paperclip'
 
