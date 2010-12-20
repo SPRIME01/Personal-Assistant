@@ -13,6 +13,8 @@ module ApplicationHelper
     
     #temp links
     links << link_to("Categories", categories_path, :title => "Events")
+    links << link_to("Calendar", calendar_path, :title => "Calendar")
+    links << link_to("Events", events_path, :title => "Events")
     
     menu(links)
   end
@@ -29,7 +31,7 @@ module ApplicationHelper
   
   def menu(links)
     content_tag :ul do
-      convert_to_list(links)
+      convert_to_list(links).html_safe
     end
   end
   
