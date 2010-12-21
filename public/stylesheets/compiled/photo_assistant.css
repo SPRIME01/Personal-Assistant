@@ -120,3 +120,34 @@ a:hover {
 #sidebar ul.options {
   text-align: right;
 }
+
+/* css for timepicker */
+/* line 89, ../sass/_main.sass */
+.ui-timepicker-div .ui-widget-header {
+  margin-bottom: 8px;
+}
+
+/* line 92, ../sass/_main.sass */
+.ui-timepicker-div dl {
+  text-align: left;
+}
+
+/* line 96, ../sass/_main.sass */
+.ui-timepicker-div dl dt {
+  height: 25px;
+}
+
+/* line 100, ../sass/_main.sass */
+.ui-timepicker-div dl dd {
+  margin: -25px 0 10px 65px;
+}
+
+/* line 103, ../sass/_main.sass */
+.ui-timepicker-div td {
+  font-size: 90%;
+}
+
+/* line 105, ../sass/_main.sass */
+#ui-datepicker-div {
+  display: none;
+}
