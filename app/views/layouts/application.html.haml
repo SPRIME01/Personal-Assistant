@@ -3,9 +3,15 @@
   %head
     %title= page_title
     = stylesheet_link_tag :all
+    = stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css"
+    = stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/themes/sunny/jquery-ui.css"
     = formtastic_stylesheet_link_tag
+
     = csrf_meta_tag
-    = javascript_include_tag "jquery", "swfobject", "uploadify", "application.js", "event_calendar"
+    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"
+    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js"
+    = javascript_include_tag "swfobject", "uploadify", "application.js", "event_calendar", "timepicker"
+    
 
   %body
     #container
