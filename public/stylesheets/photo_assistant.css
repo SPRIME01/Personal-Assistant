@@ -121,33 +121,50 @@ a:hover {
   text-align: right;
 }
 
+/* Color Box */
+/* line 88, sass/_main.sass */
+.color_box {
+  width: 16px;
+  height: 8px;
+  float: left;
+  border: 1px solid #444444;
+  margin: 3px 6px 0 0;
+}
+
+/* Event dialog for calendar */
+/* line 96, sass/_main.sass */
+a.event_dialog {
+  color: #444444;
+  display: block;
+}
+
 /* css for timepicker */
-/* line 89, sass/_main.sass */
+/* line 102, sass/_main.sass */
 .ui-timepicker-div .ui-widget-header {
   margin-bottom: 8px;
 }
 
-/* line 92, sass/_main.sass */
+/* line 105, sass/_main.sass */
 .ui-timepicker-div dl {
   text-align: left;
 }
 
-/* line 96, sass/_main.sass */
+/* line 109, sass/_main.sass */
 .ui-timepicker-div dl dt {
   height: 25px;
 }
 
-/* line 100, sass/_main.sass */
+/* line 113, sass/_main.sass */
 .ui-timepicker-div dl dd {
   margin: -25px 0 10px 65px;
 }
 
-/* line 103, sass/_main.sass */
+/* line 116, sass/_main.sass */
 .ui-timepicker-div td {
   font-size: 90%;
 }
 
-/* line 105, sass/_main.sass */
+/* line 118, sass/_main.sass */
 #ui-datepicker-div {
   display: none;
 }
