@@ -5,5 +5,11 @@
       %ul
         - @list.errors.full_messages.each do |msg|
           %li= msg
-  = f.inputs :name
+  = f.inputs do
+    = f.input :name
+  %fieldset
+    %ol
+      %li
+        = f.label :color, :style => 'width: 25%'
+        = color_dropdown(f)
   = f.buttons :commit
