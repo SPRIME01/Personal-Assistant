@@ -15,6 +15,7 @@ module ApplicationHelper
     links << link_to("Categories", categories_path, :title => "Events")
     links << link_to("Calendar", calendar_path, :title => "Calendar")
     links << link_to("Events", events_path, :title => "Events")
+    links << link_to("Color", colors_path, :title => "Colors")
     
     menu(links)
   end
@@ -50,7 +51,16 @@ module ApplicationHelper
       return "last"
     end
   end
+  
+  def color_dropdown(f)
+    @colors = Color.all
+	  color_options = @colors.collect{ |color| [color.name, color.id, :class => color.name, :style => "color:#{color.hex}"] }
+	  
+    return f.select :color_id, options_for_select(color_options, :selected => f.object.color_id), :include_blank => true
+	end
 
-end
-module ApplicationHelper
+  def color_box(hex)
+    "<p class='color_box' style='background-color:#{hex}'></p>".html_safe
+  end
+
 end
