@@ -36,7 +36,9 @@ gem 'jquery-rails'
 
 gem 'formtastic', '~> 1.1.0'
 
+#gems for events -event calendar for display, recurrence for recurring events.
 gem 'event-calendar', :require => 'event_calendar'
+gem 'recurrence', :require => 'recurrence/namespace'
 
 gem 'paperclip'
 
