@@ -8,7 +8,7 @@ $(document).ready(function() {
   // highlight events that have a background color
   $(".ec-event-bg").live("mouseover", function() {
     event_id = $(this).attr("data-event-id");
-    $(".ec-event-"+event_id).css("background-color", highlight_color);
+    $(".ec-event-"+event_id).css("background-color", event_color);
   });
   $(".ec-event-bg").live("mouseout", function() {
     event_id = $(this).attr("data-event-id");
@@ -21,15 +21,15 @@ $(document).ready(function() {
     ele = $(this);
     ele.css("color", "white");
     ele.find("a").css("color", "white");
-    ele.find(".ec-bullet").css("background-color", "white");
-    ele.css("background-color", highlight_color);
+    ele.find(".ec-bullet").css("background-color", event_color);
+    ele.css("background-color", event_color);
   });
   $(".ec-event-no-bg").live("mouseout", function() {
     ele = $(this);
     event_color = $(this).attr("data-color");
     ele.css("color", event_color);
-    ele.find("a").css("color", event_color);
-    ele.find(".ec-bullet").css("background-color", event_color);
-    ele.css("background-color", "transparent");
+    ele.find("a").css("color", "white");
+    ele.find(".ec-bullet").css("background-color", "#DDD");
+    ele.css("background-color", event_color);
   });
 });

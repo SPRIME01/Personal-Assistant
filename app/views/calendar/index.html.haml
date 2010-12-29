@@ -1,0 +1,11 @@
+
+= stylesheet_link_tag "event_calendar"
+
+%h1 Calendar
+%p Click on a date to quickly add a new event.
+
+= raw(event_calendar)
+
+#new_event_dialog{:style => 'display:none'}
+  %p Create Event
+  = render 'events/ajax_form'

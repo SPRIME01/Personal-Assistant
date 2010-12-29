@@ -1,0 +1,19 @@
+= form_for Event.new, :remote => true do |f|
+  %br
+  .field
+    =f.label :list_id
+    = f.collection_select :list_id, current_user.lists, :id, :name
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :start_at
+    = f.text_field :start_at, :class => 'datepicker'
+  .field
+    = f.label :end_at
+    = f.text_field :end_at, :class => 'datepicker'
+  .field
+    = f.label :all_day
+    = f.check_box :all_day
+  .actions
+    = f.submit 'Save'
