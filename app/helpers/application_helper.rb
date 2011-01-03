@@ -54,7 +54,7 @@ module ApplicationHelper
   
   def color_dropdown(f)
     @colors = Color.all
-	  color_options = @colors.collect{ |color| [color.name, color.id, :class => color.name, :style => "color:#{color.hex}"] }
+	  color_options = @colors.collect{ |color| [color.name, color.id] }
 	  
     return f.select :color_id, options_for_select(color_options, :selected => f.object.color_id), :include_blank => true
 	end
