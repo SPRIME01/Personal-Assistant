@@ -10,30 +10,35 @@ html, body {
 }
 
 /* line 10, sass/_main.sass */
+h2 {
+  font-size: 130%;
+}
+
+/* line 13, sass/_main.sass */
 ul {
   list-style-type: none;
 }
-/* line 14, sass/_main.sass */
+/* line 17, sass/_main.sass */
 ul li a img {
   vertical-align: middle;
 }
 
-/* line 17, sass/_main.sass */
+/* line 20, sass/_main.sass */
 a {
   color: #ff9100;
   text-decoration: none;
 }
-/* line 20, sass/_main.sass */
+/* line 23, sass/_main.sass */
 a:hover {
   color: #ec701e;
 }
 
-/* line 23, sass/_main.sass */
+/* line 26, sass/_main.sass */
 .clear {
   clear: both;
 }
 
-/* line 26, sass/_main.sass */
+/* line 29, sass/_main.sass */
 #container {
   width: 950px;
   margin: 10px auto 10px auto;
@@ -42,34 +47,34 @@ a:hover {
   border: 6px solid #abc163;
 }
 
-/* line 33, sass/_main.sass */
+/* line 36, sass/_main.sass */
 #header {
   height: 100px;
 }
-/* line 35, sass/_main.sass */
+/* line 38, sass/_main.sass */
 #header ul {
   margin-bottom: 14px;
 }
-/* line 37, sass/_main.sass */
+/* line 40, sass/_main.sass */
 #header ul li {
   margin-right: 6px;
 }
-/* line 39, sass/_main.sass */
+/* line 42, sass/_main.sass */
 #header #user_nav {
   text-align: right;
 }
-/* line 42, sass/_main.sass */
+/* line 45, sass/_main.sass */
 #header #main_menu ul {
   padding: 2px 14px;
   margin-left: 4px;
   margin-right: 4px;
 }
-/* line 46, sass/_main.sass */
+/* line 49, sass/_main.sass */
 #header #main_menu ul li {
   background-color: #434343;
   float: left;
 }
-/* line 49, sass/_main.sass */
+/* line 52, sass/_main.sass */
 #header #main_menu ul li a {
   font-family: Arial, sans-serif;
   color: #f8ffe0;
@@ -78,27 +83,83 @@ a:hover {
   font-weight: bold;
 }
 
-/* line 57, sass/_main.sass */
+/* line 60, sass/_main.sass */
 #content {
   margin: 0 0 0 17px;
   float: left;
   width: 695px;
 }
-/* line 61, sass/_main.sass */
-#content h1 {
+/* line 64, sass/_main.sass */
+#content h1, #content h2 {
   color: #2e2e2e;
   font-family: "Trebuchet MS";
   font-size: 170%;
   margin-bottom: 8px;
 }
+/* line 69, sass/_main.sass */
+#content h2 {
+  font-size: 130%;
+  border-bottom: 1px solid #2e2e2e;
+}
+/* line 72, sass/_main.sass */
+#content .list_items {
+  margin-top: 16px;
+  padding-left: 8px;
+}
+/* line 75, sass/_main.sass */
+#content .list_items ul {
+  padding-left: 8px;
+}
+/* line 77, sass/_main.sass */
+#content .list_items ul li {
+  float: left;
+}
+/* line 79, sass/_main.sass */
+#content .list_items ul li p {
+  float: left;
+}
+/* line 81, sass/_main.sass */
+#content .list_items ul li p.event {
+  background: url(../../images/cal_icon.png);
+  width: 32px;
+  height: 31px;
+  text-align: center;
+}
+/* line 86, sass/_main.sass */
+#content .list_items ul li p.event span {
+  font-size: 11px;
+  font-weight: bold;
+}
+/* line 89, sass/_main.sass */
+#content .list_items ul li p.event span.small_month_name {
+  font-family: "Century Gothic";
+  color: white;
+}
+/* line 93, sass/_main.sass */
+#content .list_items ul li p.event span.small_month_dates {
+  font-family: "Gotham";
+  color: black;
+}
+/* line 96, sass/_main.sass */
+#content .list_items ul li p.task {
+  width: 16px;
+  background: url(../../images/task_icon.png) no-repeat;
+  color: #556666;
+  height: 16px;
+  margin-right: 4px;
+}
+/* line 102, sass/_main.sass */
+#content .bottom_space {
+  margin: 16px 0;
+}
 
-/* line 67, sass/_main.sass */
+/* line 105, sass/_main.sass */
 #sidebar {
   margin: 0 0 0 17px;
   width: 200px;
   float: left;
 }
-/* line 71, sass/_main.sass */
+/* line 109, sass/_main.sass */
 #sidebar h3 {
   background-color: #e5f4ad;
   border: 1px solid #abc163;
@@ -106,23 +167,24 @@ a:hover {
   font-size: 130%;
   color: #444444;
 }
-/* line 77, sass/_main.sass */
+/* line 115, sass/_main.sass */
 #sidebar h3 a {
   color: #444444;
   display: block;
   padding: 6px;
 }
-/* line 81, sass/_main.sass */
+/* line 119, sass/_main.sass */
 #sidebar ul {
   margin-bottom: 14px;
+  padding-left: 10px;
 }
-/* line 83, sass/_main.sass */
+/* line 122, sass/_main.sass */
 #sidebar ul.options {
   text-align: right;
 }
 
 /* Color Box */
-/* line 88, sass/_main.sass */
+/* line 127, sass/_main.sass */
 .color_box {
   width: 16px;
   height: 8px;
@@ -132,39 +194,39 @@ a:hover {
 }
 
 /* Event dialog for calendar */
-/* line 96, sass/_main.sass */
+/* line 135, sass/_main.sass */
 a.event_dialog {
   color: #444444;
   display: block;
 }
 
 /* css for timepicker */
-/* line 102, sass/_main.sass */
+/* line 141, sass/_main.sass */
 .ui-timepicker-div .ui-widget-header {
   margin-bottom: 8px;
 }
 
-/* line 105, sass/_main.sass */
+/* line 144, sass/_main.sass */
 .ui-timepicker-div dl {
   text-align: left;
 }
 
-/* line 109, sass/_main.sass */
+/* line 148, sass/_main.sass */
 .ui-timepicker-div dl dt {
   height: 25px;
 }
 
-/* line 113, sass/_main.sass */
+/* line 152, sass/_main.sass */
 .ui-timepicker-div dl dd {
   margin: -25px 0 10px 65px;
 }
 
-/* line 116, sass/_main.sass */
+/* line 155, sass/_main.sass */
 .ui-timepicker-div td {
   font-size: 90%;
 }
 
-/* line 118, sass/_main.sass */
+/* line 157, sass/_main.sass */
 #ui-datepicker-div {
   display: none;
 }

@@ -7,6 +7,9 @@ html, body
   margin: 0
   padding: 0
   
+h2
+  font-size: 130%
+  
 ul
   list-style-type: none
   li
@@ -58,11 +61,46 @@ a
   margin: 0 0 0 17px
   float: left
   width: 695px
-  h1
+  h1, h2
     color: #2E2E2E
     font-family: 'Trebuchet MS'
     font-size: 170%
     margin-bottom: 8px
+  h2
+    font-size: 130%
+    border-bottom: 1px solid #2E2E2E
+  .list_items
+    margin-top: 16px
+    padding-left: 8px
+    ul
+      padding-left: 8px
+      li
+        float: left
+        p
+          float: left
+          &.event
+            background: url(../../images/cal_icon.png)
+            width: 32px
+            height: 31px
+            text-align: center
+            span
+              font-size: 11px
+              font-weight: bold
+              &.small_month_name
+                font-family: "Century Gothic"
+                color: #fff
+         
+              &.small_month_dates
+                font-family: "Gotham"
+                color: #000
+          &.task
+            width: 16px
+            background: url(../../images/task_icon.png) no-repeat
+            color: #556666
+            height: 16px
+            margin-right: 4px
+  .bottom_space
+    margin: 16px 0
   
 #sidebar
   margin: 0 0 0 17px
@@ -80,6 +118,7 @@ a
       padding: 6px
   ul
     margin-bottom: 14px
+    padding-left: 10px
     &.options
       text-align: right
       li

@@ -3,10 +3,18 @@
   - current_user.lists.each do |list|
     %li
       = color_box(list.color.hex)
-      = list.name
+      = link_to list.name, list
 %ul.options
   %li= link_to "Add List", new_list_path
   %li= link_to "Manage Lists", lists_path
+  
+%h3= link_to "My Events", tasks_path
+%ul
+  - current_user.events.each do |event|
+    %li= event.name
+%ul.options
+  %li= link_to "Add Event", new_event_path
+  %li= link_to "Manage Event", events_path
  
 %h3= link_to "My Tasks", tasks_path
 %ul

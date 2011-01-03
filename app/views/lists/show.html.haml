@@ -1,5 +1,27 @@
+%h1= "#{@list.name} List"
 %p#notice= notice
+%p quick statistics might go here
 
+.list_items
+  %h2 Events
+  %ul
+    - @list.events.each do |event|
+      %li
+        %p.event
+          %span.small_month_name= month(event.start_at)
+          %span.small_month_dates= day(event.start_at)
+        = event.name
+      %p.clear
+
+.list_items   
+  %h2 Tasks
+  %ul
+    - @list.tasks.each do |task|
+      %li
+        %p.task
+        = task.name
+      
+%p.bottom_space
 
 = link_to 'Edit', edit_list_path(@list)
 \|
