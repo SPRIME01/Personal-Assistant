@@ -62,5 +62,13 @@ module ApplicationHelper
   def color_box(hex)
     "<p class='color_box' style='background-color:#{hex}'></p>".html_safe
   end
+  
+  def day(date)
+    date.strftime("%d")
+  end
+  
+  def month(date)
+    date.strftime("%b")
+  end
 
 end
