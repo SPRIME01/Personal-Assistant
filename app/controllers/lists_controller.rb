@@ -1,6 +1,5 @@
 class ListsController < ApplicationController
-  # GET /lists
-  # GET /lists.xml
+
   def index
     @lists = List.all
 
@@ -10,8 +9,6 @@ class ListsController < ApplicationController
     end
   end
 
-  # GET /lists/1
-  # GET /lists/1.xml
   def show
     @list = List.find(params[:id])
 
@@ -21,8 +18,6 @@ class ListsController < ApplicationController
     end
   end
 
-  # GET /lists/new
-  # GET /lists/new.xml
   def new
     @list = List.new
 
@@ -32,15 +27,13 @@ class ListsController < ApplicationController
     end
   end
 
-  # GET /lists/1/edit
   def edit
     @list = List.find(params[:id])
   end
 
-  # POST /lists
-  # POST /lists.xml
   def create
     @list = List.new(params[:list])
+    @list.user_id = current_user.id
 
     respond_to do |format|
       if @list.save
@@ -53,8 +46,6 @@ class ListsController < ApplicationController
     end
   end
 
-  # PUT /lists/1
-  # PUT /lists/1.xml
   def update
     @list = List.find(params[:id])
 
@@ -69,8 +60,6 @@ class ListsController < ApplicationController
     end
   end
 
-  # DELETE /lists/1
-  # DELETE /lists/1.xml
   def destroy
     @list = List.find(params[:id])
     @list.destroy
