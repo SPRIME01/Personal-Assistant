@@ -74,31 +74,6 @@ a
     padding-left: 8px
     ul
       padding-left: 8px
-      li
-        float: left
-        p
-          float: left
-          &.event
-            background: url(../../images/cal_icon.png)
-            width: 32px
-            height: 31px
-            text-align: center
-            span
-              font-size: 11px
-              font-weight: bold
-              &.small_month_name
-                font-family: "Century Gothic"
-                color: #fff
-         
-              &.small_month_dates
-                font-family: "Gotham"
-                color: #000
-          &.task
-            width: 16px
-            background: url(../../images/task_icon.png) no-repeat
-            color: #556666
-            height: 16px
-            margin-right: 4px
   .bottom_space
     margin: 16px 0
   
@@ -122,6 +97,30 @@ a
     &.options
       text-align: right
       li
+      
+/* Icons */
+.task
+  padding-left: 20px
+  background: url(../../images/task_icon.png) no-repeat
+.event
+  float: left
+  background: url(../../images/cal_icon.png)
+  width: 32px
+  text-align: center
+  margin: 0 4px 6px 0
+  p
+    font-size: 11px
+    font-weight: bold
+    &.small_month_name
+      font-family: "Century Gothic"
+      color: #fff
+      line-height: 11px
+    &.small_month_dates
+      font-family: "Gotham"
+      color: #000
+      line-height: 20px
+      font-weight: normal
+      font-size: 9px
       
 /* Color Box */
 .color_box

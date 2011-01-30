@@ -11,7 +11,9 @@
 %h3= link_to "My Events", tasks_path
 %ul
   - current_user.events.each do |event|
-    %li= event.name
+    = render :partial => 'events/event_icon', :locals => {:event => event}
+
+    %p.clear
 %ul.options
   %li= link_to "Add Event", new_event_path
   %li= link_to "Manage Event", events_path
@@ -19,7 +21,7 @@
 %h3= link_to "My Tasks", tasks_path
 %ul
   - current_user.tasks.each do |task|
-    %li= task.name
+    %li.task= task.name
 %ul.options
   %li= link_to "Add Task", new_task_path
   %li= link_to "Manage Tasks", tasks_path
