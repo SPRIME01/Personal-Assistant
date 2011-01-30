@@ -38,7 +38,12 @@ gem 'formtastic', '~> 1.1.0'
 
 #gems for events -event calendar for display, recurrence for recurring events.
 gem 'event-calendar', :require => 'event_calendar'
+
+#coming soon recurring events gem
 gem 'recurrence', :require => 'recurrence/namespace'
+
+#simple wysiwyg
+gem 'tiny_mce'
 
 gem 'paperclip'
 
