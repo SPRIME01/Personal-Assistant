@@ -1,10 +1,10 @@
 class User < ActiveRecord::Base
-  has_many :tasks
-  has_many :lists
-  has_many :groups
-  has_many :categories
-  has_many :tags
-  has_many :events
+  has_many :tasks, :dependent => :destroy
+  has_many :lists, :dependent => :destroy
+  has_many :groups, :dependent => :destroy
+  has_many :categories, :dependent => :destroy
+  has_many :tags, :dependent => :destroy
+  has_many :events, :dependent => :destroy
   
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable, :lockable and :timeoutable
