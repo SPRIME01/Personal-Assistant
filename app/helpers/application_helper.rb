@@ -7,15 +7,18 @@ module ApplicationHelper
   def main_nav
     links = []
     links << link_to("Home", root_path, :title => "Home")
-    links << link_to("Lists", lists_path, :title => "What is This?")
-    links << link_to("Tasks", tasks_path, :title => "Home")
-    links << link_to("Groups", groups_path, :title => "Getting Started")
+    links << link_to("Lists", lists_path, :title => "View My Lists")
+    links << link_to("Tasks", tasks_path, :title => "View My Tasks")
+    links << link_to("Groups", groups_path, :title => "View My Groups")
     
     #temp links
-    links << link_to("Categories", categories_path, :title => "Events")
-    links << link_to("Calendar", calendar_path, :title => "Calendar")
-    links << link_to("Events", events_path, :title => "Events")
-    links << link_to("Color", colors_path, :title => "Colors")
+    links << link_to("Categories", categories_path, :title => "View My Categories")
+    links << link_to("Calendar", calendar_path, :title => "View My Events on a Calendar")
+    links << link_to("Events", events_path, :title => "View My Events")
+    links << link_to("Color", colors_path, :title => "Manage My Colors")
+    
+    #future help page
+    links << link_to("Help Page / Explanations", getting_started_path, :title => "Getting Started & Helpful Tips")
     
     menu(links)
   end
