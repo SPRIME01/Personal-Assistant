@@ -6,5 +6,7 @@
         - @page.errors.full_messages.each do |msg|
           %li= msg
 
-  = f.inputs :title, :permalink, :content
+  = f.inputs :title, :permalink
+  = f.inputs do
+    = f.input :content, :input_html => { :class => 'mceEditor' }
   = f.buttons :commit

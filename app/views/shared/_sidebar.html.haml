@@ -8,12 +8,12 @@
   %li= link_to "Add List", new_list_path
   %li= link_to "Manage Lists", lists_path
   
-%h3= link_to "My Events", tasks_path
+%h3= link_to "My Events", events_path
 %ul
   - current_user.events.each do |event|
     = render :partial => 'events/event_icon', :locals => {:event => event}
-
     %p.clear
+    
 %ul.options
   %li= link_to "Add Event", new_event_path
   %li= link_to "Manage Event", events_path

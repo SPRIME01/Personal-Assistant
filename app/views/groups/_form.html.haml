@@ -5,6 +5,10 @@
       %ul
         - @group.errors.full_messages.each do |msg|
           %li= msg
-  = f.inputs :name, :description, :list_id
+  
+  = f.inputs :name, :description
+  
+  = f.inputs do
+    = f.input :list_id, :as => :select, :collection => current_user.lists
 
   = f.buttons :commit
