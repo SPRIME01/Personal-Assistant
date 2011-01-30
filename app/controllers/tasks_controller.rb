@@ -40,7 +40,7 @@ class TasksController < ApplicationController
   # POST /tasks
   # POST /tasks.xml
   def create
-    @task = Task.new(params[:task])
+    @task = current_user.task.build(params[:task])
 
     respond_to do |format|
       if @task.save
